@@ -44,13 +44,18 @@
 - 기본 문서포맷도구 설정
 
 ```text
-- 관리 버튼 클리 > 설정메뉴 선택 > Defalult formatter 검색
+- 관리 버튼 클릭 > 설정메뉴 선택 > Defalult formatter 검색
 - Prettier - Code formatte 로 선택
 ```
 
 ### 2.3. Live Server 셋팅 (일부 실행 오류 발견됨)
 
-- 파악 후 업데이트 예정
+- 검색 > `시스템 환경 변수 편집` > 환경변수...
+
+- Adminstrator에 대한 사용자 변수
+  - Path 내용 축 :`C:\Windows\System32`
+- 시스템 변수
+  - Path 내용 축 :`C:\Windows\System32`
 
 # WAS(Web Application Server)
 
@@ -213,7 +218,7 @@ git --verison
 관리도구
  버튼 > Settings > 입력창 > default:Windows > Git Bash 선택
 ```
-
+``
 - 설정확인
 
 ```text
@@ -239,8 +244,8 @@ git config --global init.defaltBranch main
 '''bash
 기본 저장소 이름 바꾸기
 git remote add origin https://github.com/[GIT_USER_ID]/example.git
-git branch -M (main)
-git push -u origin (main)
+git branch -M (master)
+git push -u origin (master)
 '''
 
 ### 1.4. Enter 키에 의한 줄내림 통일하기 (Linux, Mac, Window)
@@ -284,6 +289,20 @@ git add .
 ( .<<다 찾아라)
 ```
 
+- Git 작업내역 메모하기
+
+```bash
+git commit
+```
+
+- 새로운 작업단위, 즉 브랜치 생성하기
+
+```bash
+git branch header
+git switch header
+```
+
+- 월요일 할거지롱.
 
 ## 3. GitHub 관리
 

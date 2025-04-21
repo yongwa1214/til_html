@@ -218,7 +218,7 @@ git --verison
 관리도구
  버튼 > Settings > 입력창 > default:Windows > Git Bash 선택
 ```
-``
+
 - 설정확인
 
 ```text

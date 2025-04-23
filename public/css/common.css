@@ -1,12 +1,84 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* outline-style: none; */
+}
+
+/* 태그 선택 : 추천하는 각 태그별 기본값 */
+a {
+  text-decoration: none;
+  /* 아래는 디자인 보고 수정 */
+  color: #000000;
+}
+ul {
+  list-style: none;
+}
+html {
+  width: 100%;
+  /* 아래는 디자인 보고 수정 */
+  font-size: 12px; /*웹 브라우저상 폰트의 기본 사이즈는 12*/
+}
 body {
+  width: 100%;
+  font-size: 1rem; /*rem은 html의 폰트 사이즈 배수 여기선 1rem은 12 2rm은 24*/
+  /* 아래는 디자인 보고 수정 */
+  color: #000000;
+  /* 글꼴이 필요로 함 */
+}
+
+.wrap {
+  width: 100%;
+}
+
+.layout {
+  width: 1280px;
+  margin: 0 auto;
+  /*  margin-top: 0; 
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;*/
+}
+
+.header {
+  width: 100%;
+  height: 163px;
   background-color: #ffffff;
-  color: rgb(63, 47, 47);
+  border-bottom: 1px solid #ebebeb;
 }
-
-div.wrap {
-  border: 5px solid black;
+.header_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-header {
-  background-color: rgb(204, 218, 255);
+.header_top_left {
+  display: flex;
+  align-items: center;
+}
+.search_form{
+    display: flex;
+    align-items: center;
+}
+.header_top_right {
+}
+.member {
+  display: flex;
+}
+.header_bottom {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+}
+.cupon {
+  display: flex;
+}
+.cupon > li > a {
+  display: flex;
+  align-items: center;
 }

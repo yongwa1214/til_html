@@ -1,0 +1,12 @@
+body {
+  background-color: #ffffff;
+  color: rgb(63, 47, 47);
+}
+
+div.wrap {
+  border: 5px solid black;
+}
+
+header {
+  background-color: rgb(204, 218, 255);
+}

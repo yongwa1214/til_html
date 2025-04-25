@@ -339,4 +339,4 @@ div {
 ## 7. CSS 살펴보기
 
 - margin (영역 바깥으로 여백)
-  - margin-top은 오류가 발생할 수 있습니다. 
+  - margin-top은 오류가 발생할 수 있습니다. git 

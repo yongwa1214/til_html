@@ -1,10 +1,11 @@
 @charset "utf-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-  /* outline-style: none; */
+  outline-style: none;
 }
 
 /* 태그 선택 : 추천하는 각 태그별 기본값 */
@@ -21,12 +22,16 @@ html {
   /* 아래는 디자인 보고 수정 */
   font-size: 12px; /*웹 브라우저상 폰트의 기본 사이즈는 12*/
 }
+
 body {
   width: 100%;
   font-size: 1rem; /*rem은 html의 폰트 사이즈 배수 여기선 1rem은 12 2rm은 24*/
   /* 아래는 디자인 보고 수정 */
   color: #000000;
   /* 글꼴이 필요로 함 */
+  font-family: "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+  letter-spacing: 0px;
+  word-spacing: 0px;
 }
 
 .wrap {
@@ -53,14 +58,41 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 .header_top_left {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
-.search_form{
-    display: flex;
-    align-items: center;
+.logo > a > img {
+  width: 150px;
+  height: 38px;
+}
+
+.search {
+}
+.search_form {
+  display: flex;
+  align-items: center;
+  width: 460px;
+}
+.serach_form_word {
+  width: calc(100% - 50px);
+  height: 50px;
+  background-color: #f7f7f8;
+  border: none;
+  border-radius: 25px 0px 0px 25px;
+  padding-left: 15px;
+}
+
+.serach_form_button {
+  width: 50px;
+  height: 50px;
+  background-color: #f7f7f8;
+  border: none;
+  border-radius: 0px 25px 25px 0px;
 }
 .header_top_right {
 }

@@ -1,8 +1,8 @@
 # CSS
 
 - html 을 꾸며주기
-- display
-- position
+- display 중요함
+- position 중요함
 
 ## 1. css 작성법 3가지
 
@@ -339,3 +339,28 @@ div {
 
 - margin (영역 바깥으로 여백)
   - margin-top은 오류가 발생할 수 있습니다. git
+
+## position 을 꼭 기억하자.
+
+### 1. 내가 정확하게 xp로 위치를 지정하고 싶다.
+
+- 아래처럼 할 때 정말 주의하세요.
+- 바깥 영역에 `position: relative` 가 있어야 해요.
+
+```css
+position: absolute;
+left:0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```
+
+### 2. 내가 웹 브라우저에 위치를 고정하고 싶다.
+
+```css
+position: fixed;
+left:0px;
+top: 0px;
+right: 0px;
+bottom: 0px;
+```

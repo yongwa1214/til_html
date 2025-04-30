@@ -1,6 +1,5 @@
 .header {
   width: 100%;
-  height: 163px;
   background-color: #ffffff;
   border-bottom: 1px solid #ebebeb;
 }
@@ -9,8 +8,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  /* margin-top: 20px; */
+  /* margin-bottom: 20px; */
+  margin: 20px 0;
 }
 .header_top_left {
   display: flex;
@@ -18,11 +18,12 @@
   gap: 20px;
 }
 .logo > a > img {
-  width: 150px;
-  height: 38px;
+  width: 152px;
+  height: auto;
 }
 
 .search {
+  
 }
 .search_form {
   display: flex;
@@ -69,27 +70,75 @@
   line-height: 16px;
 }
 
-  .header_bottom {
+.header_bottom {
   width: 100%;
   display: flex;
   align-items: center;
 }
 .nav {
+  position: relative;
   display: flex;
+  gap: 0px;
 }
+
+.nav::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  /* top: calc(100% - 50% - 24px / 2 ); */
+  top: 53%;
+  transform: translateY(-50%);
+  width: 2px;
+  height: 24px;
+  background-color: #e9e9e9;
+}
+
 .nav li a {
+  position: relative;
   display: block;
   font-size: 20px;
-  font-weight: 700;
-  padding: 0px 40px;
-/* padding: 0px 40px 0px 40px 이랑 같은 말 첫번째가 위아래 두번째가 위아래  */
-  background-color: yellow;
+  font-weight: 400;
+  padding: 20px 40px;
+  /* padding: 0px 40px 0px 40px 이랑 같은 말 첫번째가 위아래 두번째가 위아래  */
 }
-.header_bottom_eventmenu{}
+
+.nav li a.focus {
+  font-weight: 700 !important;
+}
+
+.nav li a.focus::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #1c1c1c;
+}
+
+.header_bottom_eventmenu {
+}
+
 .cupon {
   display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 30px;
 }
 .cupon > li > a {
   display: flex;
   align-items: center;
+  gap: 5px;
+
+  font-size: 18px;
+  font-weight: 600;
+  color: #324b97;
+  padding: 0 20px;
+}
+.cupon > li > a > img {
+  transform: translateY(10%); /*px 보다는 %가 낫다 (2px)*/
 }

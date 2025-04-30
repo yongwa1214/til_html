@@ -39,7 +39,8 @@ body {
 }
 
 .layout {
-  width: 1280px;
+  max-width: 1280px; /*반응형 시작. 최대 넓이 1280*/
+  width: 100%; /*이건 안 적어도 기본 설정임*/
   margin: 0 auto;
   /*  margin-top: 0; 
     margin-bottom: 0;

@@ -16,7 +16,7 @@
 ### 2.1. 퍼블리싱 추천 Extension (플러그인)
 
 ```text
-- Auto colse Tag
+- Auto close Tag
 - Auto Rename Tag
 - Bracket pari clor DLW
 - CSS Peak
@@ -95,7 +95,7 @@ common.css(공통적용), header.css, footer.css 등 영역별로 생성
 
 ```html
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />

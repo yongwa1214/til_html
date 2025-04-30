@@ -68,7 +68,7 @@
   color: #000;
   line-height: 16px;
 }
-]
+
   .header_bottom {
   width: 100%;
   display: flex;
@@ -77,6 +77,15 @@
 .nav {
   display: flex;
 }
+.nav li a {
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 0px 40px;
+/* padding: 0px 40px 0px 40px 이랑 같은 말 첫번째가 위아래 두번째가 위아래  */
+  background-color: yellow;
+}
+.header_bottom_eventmenu{}
 .cupon {
   display: flex;
 }

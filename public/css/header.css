@@ -23,14 +23,14 @@
 }
 
 .search {
-  
 }
+
 .search_form {
   display: flex;
   align-items: center;
   width: 460px;
 }
-.serach_form_word {
+.search_form_word {
   width: calc(100% - 50px);
   height: 50px;
   background-color: #f7f7f8;
@@ -39,7 +39,7 @@
   padding-left: 15px;
 }
 
-.serach_form_button {
+.search_form_button {
   width: 50px;
   height: 50px;
   background-color: #f7f7f8;
@@ -75,6 +75,10 @@
   display: flex;
   align-items: center;
 }
+
+.header_bottom_nav {
+}
+
 .nav {
   position: relative;
   display: flex;
@@ -96,6 +100,7 @@
 
 .nav li a {
   position: relative;
+
   display: block;
   font-size: 20px;
   font-weight: 400;
@@ -139,6 +144,7 @@
   color: #324b97;
   padding: 0 20px;
 }
+
 .cupon > li > a > img {
   transform: translateY(10%); /*px 보다는 %가 낫다 (2px)*/
 }

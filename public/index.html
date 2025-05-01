@@ -2,7 +2,6 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의 til</title>
     <link rel="stylesheet" href="css/common.css" />
@@ -10,19 +9,19 @@
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/tour.css" />
   </head>
+
   <body>
-    <a href="#">a태그입니다</a>
     <!-- 전체 레이아웃  -->
     <div class="wrap">
       <!-- 상단 -->
       <header class="header">
         <div class="layout">
-          <!-- 상단의 위  -->
+          <!-- 상단의 위 -->
           <div class="header_top">
             <div class="header_top_left">
               <!-- 로고 -->
               <div class="logo">
-                <a href="https://nol.interpark.com/" target="_blank">
+                <a href="http://www.interpark.com" target="_blank">
                   <img src="images/logo.svg" alt="로고" title="인터파크" />
                 </a>
               </div>
@@ -30,8 +29,16 @@
               <div class="search">
                 <!-- 제품 검색 API 연동 -->
                 <form class="search_form">
-                  <input class="serach_form_word" type="text" placeholder="제품을 검색해 주세요." />
-                  <input class="serach_form_button" type="submit" value="검색" />
+                  <input
+                    class="search_form_word"
+                    type="text"
+                    placeholder="제품을 검색해 주세요."
+                  />
+                  <input
+                    class="search_form_button"
+                    type="submit"
+                    value="검색"
+                  />
                 </form>
               </div>
             </div>
@@ -60,8 +67,8 @@
                       src="images/badge_hot.svg"
                       alt="해외여행쿠폰"
                       title="해외여행쿠폰"
-                  />
-                </a>
+                    />
+                  </a>
                 </li>
                 <li>
                   <a href="#">
@@ -80,7 +87,6 @@
           </div>
         </div>
       </header>
-
       <!-- 메인 -->
       <main>
         <div class="layout">
@@ -96,11 +102,13 @@
                 <a href="#">
                   <img src="images/v2.jpg" alt="banner2" title="배너2" />
                 </a>
+              </div>
             </div>
-          </div>  
+
             <button class="slide_bt banner_left">
               <img src="images/slider_arrow.svg" alt="left" title="left" />
             </button>
+
             <button class="slide_bt banner_right">
               <img src="images/slider_arrow.svg" alt="right" title="right" />
             </button>
@@ -112,7 +120,7 @@
               <span class="section_desc">마감임박! 금주의 특가 여행 추천</span>
             </div>
             <div class="section_list">
-              <!-- Start 목록영역  -->
+              <!--Start 목록영역 -->
               <div class="section_category">
                 <ul class="section_category_bts">
                   <li><button class="cate_focus">마감임박</button></li>
@@ -123,48 +131,65 @@
                 </ul>
               </div>
               <div class="section_slide">
-                <!-- start추후 json 데이터 연동으로 변경 예정 -->
+                <!--Start 추후 JSON 데이터 연동으로 변경 예정 -->
                 <div class="item">
                   <a href="#">
-                    <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
-                    <span>나트랑</span>
-                    <span>[10%쿠폰] 아동 동반 가족여행 강력 추천</span>
-                    <p>
-                      방콕/파파야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                      윈덤 좀티엔 파파야, 마사지 2시간, 핵심일정 포함
-                    </p>
-                    <span><b>109,000</b>원~</span>
+                    <div class="item_image">
+                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
+                    </div>
+                    <span class="item_name">나트랑</span>
+                    <div class="item_text">
+                      <span class="item_cupon">
+                        [10%쿠폰] 아동 동반 가족여행 강력 추천
+                      </span>
+                      <p class="item_desc">
+                        방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
+                        윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
+                      </p>
+                      <span class="item_price"><b>109,000</b>원~</span>
+                    </div>
                   </a>
                 </div>
                 <div class="item">
                   <a href="#">
-                    <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
-                    <span>나트랑</span>
-                    <span>[10%쿠폰] 아동 동반 가족여행 강력 추천</span>
-                    <p>
-                      방콕/파파야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                      윈덤 좀티엔 파파야, 마사지 2시간, 핵심일정 포함
-                    </p>
-                    <span><b>109,000</b>원~</span>
+                    <div class="item_image">
+                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
+                    </div>
+                    <span class="item_name">나트랑</span>
+                    <div class="item_text">
+                      <span class="item_cupon">
+                        [10%쿠폰] 아동 동반 가족여행 강력 추천
+                      </span>
+                      <p class="item_desc">
+                        방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
+                        윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
+                      </p>
+                      <span class="item_price"><b>109,000</b>원~</span>
+                    </div>
                   </a>
-                </div>
+                </div>                
                 <div class="item">
                   <a href="#">
-                    <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
-                    <span>나트랑</span>
-                    <span>[10%쿠폰] 아동 동반 가족여행 강력 추천</span>
-                    <p>
-                      방콕/파파야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                      윈덤 좀티엔 파파야, 마사지 2시간, 핵심일정 포함
-                    </p>
-                    <span><b>109,000</b>원~</span>
+                    <div class="item_image">
+                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
+                    </div>
+                    <span class="item_name">나트랑</span>
+                    <div class="item_text">
+                      <span class="item_cupon">
+                        [10%쿠폰] 아동 동반 가족여행 강력 추천
+                      </span>
+                      <p class="item_desc">
+                        방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
+                        윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
+                      </p>
+                      <span class="item_price"><b>109,000</b>원~</span>
+                    </div>
                   </a>
                 </div>
+
+                <!--End 추후 JSON 데이터 연동으로 변경 예정 -->
               </div>
-              <!-- End 목록영역  -->
-              <div>
-                <!-- start추후 json 데이터 연동으로 변경 예정 -->
-              </div>
+              <!--End 목록영역 -->
             </div>
             <div class="section_bts">
               <a href="#">
@@ -172,17 +197,13 @@
                 <img
                   src="images/icon_linkArrow.svg"
                   alt="투어 홈 바로가기"
-                  title="투어홈 바로가기"
+                  title="투어 홈 바로가기"
                 />
               </a>
             </div>
           </div>
           <!-- Trip -->
-          <div class="trip">
-            <div class="section_top"></div>
-            <div class="section_list"></div>
-            <div class="section_bts"></div>
-          </div>
+          <div></div>
           <!-- Ticket -->
           <div></div>
           <!-- Live -->

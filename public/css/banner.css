@@ -1,6 +1,7 @@
 .banner {
   position: relative;
   margin-top: 30px;
+  
 }
 
 .banner_slide {
@@ -11,24 +12,36 @@
 .banner_list {
   border-radius: 15px;
   overflow: hidden;
+  background-color: blue;
 }
+/* 이미지가 영역에 가득 채워지면서도  비율이 유지되도록 처리 */
 .banner_list img {
   width: 100%;
+  height: 100%;
+  /* 비율을 유지하면서 영역에 이미지 가득 채우기 */
+  object-fit: cover;
+  display: block;
 }
 
 .slide_bt {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); << 아래 translateX에 덮어 씌워짐 */ 
   width: 50px;
   height: 50px;
-  border-radius: 50px; /*퍼센트 가능*/
+  border-radius: 50%; /*px가능 그러나 %가 낫다*/
+
+  cursor: pointer;
+  
+  border: 1px solid #e6e6e6;
+  background-color: rgba(255, 255, 255, 0.85); /*a는 투명도. 투명도 최대치는 1.0*/
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
 }
 .banner_left {
   left: 0;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%) rotateY(180deg); /*위에(29번줄) translatey적으면 x에 덮어 씌워지기 때문에 X와 Y같이 써준다. / 180deg = 180도*/
 }
 .banner_right {
   right: 0;
-  transform: translateX(50%);
+  transform: translateX(50%) translateY(-50%);
 }

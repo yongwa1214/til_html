@@ -60,11 +60,12 @@
 }
 
 /* 태그 선택 : 추천하는 각 태그별 기본값 */
-a {
+/* a {
   text-decoration: none;
-  /* 아래는 디자인 보고 수정 */
+  /* 아래는 디자인 보고 수정 
   color: #000000;
-}
+} */
+
 ul {
   list-style: none;
 }
@@ -349,7 +350,7 @@ div {
 
 ```css
 position: absolute;
-left:0px;
+left: 0px;
 top: 0px;
 right: 0px;
 bottom: 0px;
@@ -359,7 +360,7 @@ bottom: 0px;
 
 ```css
 position: fixed;
-left:0px;
+left: 0px;
 top: 0px;
 right: 0px;
 bottom: 0px;

@@ -1,20 +1,23 @@
-.footer {
-    width: 100%;
-    background-color: #cc5050;
+.footer_top{
+    display: flex;
+    margin: 40px 0px;
 }
 
-.footer_top{
-    width: 100%;
-    display: flex;
-    background-color: #000;
+.etc_menu{
+   display: flex;
+   gap: 60px;
+   margin-left: 20px;
 }
 
 .footer_middle{
     width: 100%;
     display: flex;
+    justify-content: space-between; /*균등 분할 gap사용x gap 사용시 글자 잘림*/
+    margin-bottom: 25px;
 }
 
 .footer_bottom{
     width: 100%;
-    display: flex;
+   
+    margin-bottom: 25px;
 }

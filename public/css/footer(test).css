@@ -1,0 +1,20 @@
+.footer {
+    width: 100%;
+    background-color: #cc5050;
+}
+
+.footer_top{
+    width: 100%;
+    display: flex;
+    background-color: #000;
+}
+
+.footer_middle{
+    width: 100%;
+    display: flex;
+}
+
+.footer_bottom{
+    width: 100%;
+    display: flex;
+}

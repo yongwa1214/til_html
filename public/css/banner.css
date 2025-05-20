@@ -8,11 +8,13 @@
   display: flex;
   gap: 25px;
 }
-
+.sw_banner {
+  border-radius: 15px;
+}
 .banner_list {
   border-radius: 15px;
   overflow: hidden;
-  background-color: blue;
+  background-color: rgb(255, 255, 255);
 }
 /* 이미지가 영역에 가득 채워지면서도  비율이 유지되도록 처리 */
 .banner_list img {
@@ -36,6 +38,7 @@
   border: 1px solid #e6e6e6;
   background-color: rgba(255, 255, 255, 0.85); /*a는 투명도. 투명도 최대치는 1.0*/
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+  z-index: 100;
 }
 .banner_left {
   left: 0;

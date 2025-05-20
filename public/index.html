@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>나의 til</title>
+    <!--외부 라이브러리-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/header.css" />
@@ -11,7 +18,8 @@
     <link rel="stylesheet" href="css/tour.css" />
     <!-- js 초기 코드 -->
     <script src="js/index.js"></script>
-    <script src = "js/header.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/banner.js"></script>
   </head>
 
   <body>
@@ -96,17 +104,12 @@
         <div class="layout">
           <!-- Banner -->
           <div class="banner">
-            <div class="banner_slide">
-              <div class="banner_list">
-                <a href="#">
-                  <img src="images/v1.png" alt="banner" title="배너" />
-                </a>
+            <!-- 절대로 swiper 단어 고치지 않는다 -->
+            <div class="swiper sw_banner">
+              <div class="swiper-wrapper">
+                <!-- API 연동 -->
               </div>
-              <div class="banner_list">
-                <a href="#">
-                  <img src="images/v2.jpg" alt="banner2" title="배너2" />
-                </a>
-              </div>
+              <div class="swiper-pagination"></div>
             </div>
 
             <button class="slide_bt banner_left">
@@ -139,54 +142,49 @@
                 <div class="item">
                   <a href="#">
                     <div class="item_image">
-                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
+                      <img src="images/a3.jpg" alt="라오스" title="라오스" />
                     </div>
-                    <span class="item_name">나트랑</span>
+                    <span class="item_name">라오스</span>
                     <div class="item_text">
-                      <span class="item_cupon">
-                        [10%쿠폰] 아동 동반 가족여행 강력 추천
-                      </span>
+                      <span class="item_cupon"> 블루라군+동굴튜빙 포함 </span>
                       <p class="item_desc">
-                        방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                        윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
+                        라오스 비엔티엔/방비엥 5일, 블루라군+동굴튜빙+카약,풍등
+                        띄우기,특식3회
                       </p>
-                      <span class="item_price"><b>109,000</b>원~</span>
+                      <span class="item_price"><b>439,000</b>원~</span>
                     </div>
                   </a>
                 </div>
                 <div class="item">
                   <a href="#">
                     <div class="item_image">
-                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
+                      <img src="images/a1.jpg" alt="대만" title="대만" />
                     </div>
-                    <span class="item_name">나트랑</span>
+                    <span class="item_name">대만</span>
                     <div class="item_text">
-                      <span class="item_cupon">
-                        [10%쿠폰] 아동 동반 가족여행 강력 추천
-                      </span>
+                      <span class="item_cupon"> 노쇼핑 </span>
                       <p class="item_desc">
-                        방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                        윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
+                        [베스트셀러]대만 4일/노쇼핑,예스지,핑시선 
+                        <>낭만열차 탑승,미식투어
                       </p>
-                      <span class="item_price"><b>109,000</b>원~</span>
+                      <span class="item_price"><b>679,000</b>원~</span>
                     </div>
                   </a>
                 </div>
                 <div class="item">
                   <a href="#">
                     <div class="item_image">
-                      <img src="images/v3.jpg" alt="나트랑" title="나트랑" />
+                      <img src="images/a2.webp" alt="나트랑" title="나트랑" />
                     </div>
-                    <span class="item_name">나트랑</span>
+                    <span class="item_name">호놀룰루</span>
                     <div class="item_text">
                       <span class="item_cupon">
-                        [10%쿠폰] 아동 동반 가족여행 강력 추천
+                        10%쿠폰/리조트피 포함 요금 보유!
                       </span>
                       <p class="item_desc">
-                        방콕/파타야 5일, 중대형기종(347석) 탑승, 24년 오픈 5성
-                        윈덤 좀티엔 파타야,마사지 2시간,핵심일정 포함
+                        하얏트 리젠시 와이키키 비치 리조트 & 스파
                       </p>
-                      <span class="item_price"><b>109,000</b>원~</span>
+                      <span class="item_price"><b>320,399</b>원~</span>
                     </div>
                   </a>
                 </div>

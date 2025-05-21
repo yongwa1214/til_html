@@ -17,17 +17,17 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // headerTop 영역의 높이값을 px로 알고 싶다.
     const headerTopH = this.document.querySelector(".header_top");
-    console.log(headerTopH.offsetHeight); // 50px 출력
-    
+    //console.log(headerTopH.offsetHeight); // 50px 출력
+
     // 만약 50보다 작으면 전체를 보이고, 그렇지 않으면 일부분을 숨긴다
-    if (scrollY <= headerTopH.offsetHeight) {
+    if (scrollY <= headerTopH.offsetHeight + 40) {
       //console.log("모두 보여라");
       logo.style.display = "block";
       eventMenu.style.display = "block";
       header.classList.remove("header_down");
       headerTop.classList.remove("header_top_down");
       search.classList.remove("search_down");
-      member.classList.remove("member_down")
+      member.classList.remove("member_down");
     } else {
       // console.log("일부만 보여라");
       // 로고를 css 로 제어하겠다.
@@ -41,4 +41,3 @@ window.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
-

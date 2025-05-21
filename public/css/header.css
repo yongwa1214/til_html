@@ -5,10 +5,11 @@
 }
 .header_down {
   position: fixed;
+  z-index: 99999; /*가장 위에 있어야 하니까 그냥 숫자 높게 설정해주면 됩니다*/
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
+ 
 }
 
 .header_top {

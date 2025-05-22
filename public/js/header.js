@@ -20,7 +20,7 @@ window.addEventListener("DOMContentLoaded", function () {
     //console.log(headerTopH.offsetHeight); // 50px 출력
 
     // 만약 50보다 작으면 전체를 보이고, 그렇지 않으면 일부분을 숨긴다
-    if (scrollY <= headerTopH.offsetHeight) {
+    if (scrollY <= headerTopH.offsetHeight+100) {
       //console.log("모두 보여라");
       logo.style.display = "block";
       eventMenu.style.display = "block";

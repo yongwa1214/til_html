@@ -20,7 +20,7 @@ ul {
 html {
   width: 100%;
   /* 아래는 디자인 보고 수정 */
-  font-size: 12px; /*웹 브라우저상 폰트의 기본 사이즈는 12*/
+  font-size: 12px; /*hidden*웹 브라우저상 폰트의 기본 사이즈는 12*/
 }
 
 body {
@@ -32,6 +32,7 @@ body {
   font-family: "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
   letter-spacing: 0px;
   word-spacing: 0px;
+  
 }
 
 .wrap {
@@ -47,3 +48,28 @@ body {
     margin-left: auto;
     margin-right: auto;*/
 }
+
+/* 반응형 작업 */
+/* body{
+  background-color: rgb(119, 0, 255);
+}
+@media screen and (max-width:1024px){ //꼭 and 뒤에 띄어쓰기 하기 
+  body {
+    background-color: rgba(119, 0, 255, 0.801);
+  }
+}
+@media screen and (max-width:960px){
+  body {
+    background-color: rgba(119, 0, 255, 0.712);
+  }
+}
+@media screen and (max-width:760px){
+  body {
+    background-color: rgba(119, 0, 255, 0.452);
+  }
+}
+@media screen and (max-width:760px){
+  body {
+    background-color: rgba(119, 0, 255, 0.185);
+  }
+} */

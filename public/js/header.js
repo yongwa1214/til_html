@@ -2,6 +2,7 @@
 // DOM 은 html 태그 구조를 말한다.(Document Object Model)
 // 아래 문장은 html 이 완성되어졌다면 실행하자
 window.addEventListener("DOMContentLoaded", function () {
+
   // 아래 구문은 header 변수에 만들고 html(document) 에서 css 선택자로 값을 셋팅
   const header = this.document.querySelector(".header");
   const headerTop = this.document.querySelector(".header_top");
@@ -21,7 +22,7 @@ window.addEventListener("DOMContentLoaded", function () {
     //console.log(headerTopH.offsetHeight); // 50px 출력
 
     // 만약 50보다 작으면 전체를 보이고, 그렇지 않으면 일부분을 숨긴다
-    if (scrollY <= 30 ) {
+    if (scrollY <= headerTopH.offsetHeight ) {
       //console.log("모두 보여라");
       logo.style.display = "block";
       eventMenu.style.display = "block";
@@ -36,12 +37,15 @@ window.addEventListener("DOMContentLoaded", function () {
       // 로고를 css 로 제어하겠다.
       logo.style.display = "none";
       eventMenu.style.display = "none";
+
+      
       // class 추가로 변경
-      header.classList.add("header_down");
+      //header.classList.add("header_down");
       headerTop.classList.add("header_top_down");
       search.classList.add("search_down");
       member.classList.add("member_down");
-      main.classList.add("main_fixed");
+      return;
+      //main.classList.add("main_fixed");
     }
   });
 });

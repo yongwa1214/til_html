@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   outline-style: none;
 }
 
@@ -25,12 +25,12 @@ html {
 
 body {
   width: 100%;
-  font-size: 1rem; /*rem은 html의 폰트 사이즈 배 수 여기선 1rem은 12 2rm은 24*/
-  /* 아래는 디자인 보고 수정 */
-  color: #000000;
   /* 글꼴이 필요로 함 */
   font-family: "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+  font-size: 1rem; /*rem은 html의 폰트 사이즈 배 수 여기선 1rem은 12 2rm은 24*/
   letter-spacing: 0px;
+  /* 아래는 디자인 보고 수정 */
+  color: #000000;
   word-spacing: 0px;
 }
 
@@ -47,21 +47,39 @@ body {
     margin-left: auto;
     margin-right: auto;*/
 }
+/* 반응형 작업 */
+@media all and (max-width:1280px){
+  .layout{
+    max-width: 1024px ; 
+  }
+}
+@media all and (max-width:1024px){
+  .layout{
+    max-width: 760px ;
+    
+  }
+}
+@media all and (max-width:760px){
+  .layout{
+    min-width: 100%;
+    
+  }
+}
 
 .slide_bt {
   position: absolute;
   top: 50%;
+  z-index: 100;
   /* transform: translateY(-50%); << 아래 translateX에 덮어 씌워짐 */ 
   width: 50px;
   height: 50px;
-  border-radius: 50%; /*px가능 그러나 %가 낫다*/
-
-  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.85); /*a는 투명도. 투명도 최대치는 1.0*/
   
   border: 1px solid #e6e6e6;
-  background-color: rgba(255, 255, 255, 0.85); /*a는 투명도. 투명도 최대치는 1.0*/
+  border-radius: 50%; /*px가능 그러나 %가 낫다*/
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
-  z-index: 100;
+
+  cursor: pointer;
 }
 .slide_bt_left {
   left: 0;
@@ -78,32 +96,3 @@ body {
 }
 
 
-/* 반응형 작업 */
-body {
-  background-color: rgb(135, 124, 236);
-}
-/* header 가 fixed 가 되면 강제로 padding 넣기 */
-.main_fixed {
-  padding-top: 120px;
-}
-@media screen and (max-width: 1024px) {
-  /* 꼭 and 뒤에 띄어쓰기 하기 */
-  body {
-    background-color: rgba(119, 0, 255, 0.801);
-  }
-}
-@media screen and (max-width: 960px) {
-  body {
-    background-color: rgba(119, 0, 255, 0.712);
-  }
-}
-@media screen and (max-width: 760px) {
-  body {
-    background-color: rgba(119, 0, 255, 0.452);
-  }
-}
-@media screen and (max-width: 760px) {
-  body {
-    background-color: rgba(119, 0, 255, 0.185);
-  }
-}

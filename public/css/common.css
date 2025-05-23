@@ -47,3 +47,32 @@ body {
     margin-left: auto;
     margin-right: auto;*/
 }
+/* 반응형 작업 */
+body {
+  background-color: rgb(135, 124, 236);
+}
+/* header 가 fixed 가 되면 강제로 padding 넣기 */
+.main_fixed {
+  padding-top: 120px;
+}
+@media screen and (max-width: 1024px) {
+  /* 꼭 and 뒤에 띄어쓰기 하기 */
+  body {
+    background-color: rgba(119, 0, 255, 0.801);
+  }
+}
+@media screen and (max-width: 960px) {
+  body {
+    background-color: rgba(119, 0, 255, 0.712);
+  }
+}
+@media screen and (max-width: 760px) {
+  body {
+    background-color: rgba(119, 0, 255, 0.452);
+  }
+}
+@media screen and (max-width: 760px) {
+  body {
+    background-color: rgba(119, 0, 255, 0.185);
+  }
+}

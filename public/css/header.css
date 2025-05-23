@@ -1,7 +1,9 @@
 .header {
+  position: relative;
   width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #ebebeb;
+  z-index: 99999; /*가장 위에 있어야 하니까 그냥 숫자 높게 설정해주면 됩니다*/
 }
 .header_down {
   position: fixed;

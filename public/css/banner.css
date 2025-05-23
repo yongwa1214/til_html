@@ -26,26 +26,4 @@
   display: block;
 }
 
-.slide_bt {
-  position: absolute;
-  top: 50%;
-  /* transform: translateY(-50%); << 아래 translateX에 덮어 씌워짐 */ 
-  width: 50px;
-  height: 50px;
-  border-radius: 50%; /*px가능 그러나 %가 낫다*/
 
-  cursor: pointer;
-  
-  border: 1px solid #e6e6e6;
-  background-color: rgba(255, 255, 255, 0.85); /*a는 투명도. 투명도 최대치는 1.0*/
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
-  z-index: 100;
-}
-.banner_left {
-  left: 0;
-  transform: translateX(-50%) translateY(-50%) rotateY(180deg); /*위에(29번줄) translatey적으면 x에 덮어 씌워지기 때문에 X와 Y같이 써준다. / 180deg = 180도*/
-}
-.banner_right {
-  right: 0;
-  transform: translateX(50%) translateY(-50%);
-}

@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const search = this.document.querySelector(".search");
   const member = this.document.querySelector(".header_top_right");
   const eventMenu = this.document.querySelector(".header_bottom_eventmenu");
+  const banner = this.document.querySelector(".banner");
 
   // window에 스크롤(scroll 이벤트)이 일어나면 기능을 작동하겠다
   this.window.addEventListener("scroll", function () {
@@ -20,7 +21,7 @@ window.addEventListener("DOMContentLoaded", function () {
     //console.log(headerTopH.offsetHeight); // 50px 출력
 
     // 만약 50보다 작으면 전체를 보이고, 그렇지 않으면 일부분을 숨긴다
-    if (scrollY <= headerTopH.offsetHeight+100) {
+    if (scrollY <= headerTopH.offsetHeight) {
       //console.log("모두 보여라");
       logo.style.display = "block";
       eventMenu.style.display = "block";
@@ -28,6 +29,7 @@ window.addEventListener("DOMContentLoaded", function () {
       headerTop.classList.remove("header_top_down");
       search.classList.remove("search_down");
       member.classList.remove("member_down");
+      banner.classList.remove("banner_fix");
     } else {
       // console.log("일부만 보여라");
       // 로고를 css 로 제어하겠다.
@@ -38,6 +40,7 @@ window.addEventListener("DOMContentLoaded", function () {
       headerTop.classList.add("header_top_down");
       search.classList.add("search_down");
       member.classList.add("member_down");
+      banner.classList.add("banner_fix");
     }
   });
 });

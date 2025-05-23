@@ -1,0 +1,23 @@
+.footer_top{
+  display: flex;
+  margin: 40px 0px;
+}
+
+.etc_menu{
+ display: flex;
+ gap: 60px;
+ margin-left: 20px;
+}
+
+.footer_middle{
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /*균등 분할 gap사용x gap 사용시 글자 잘림*/
+  margin-bottom: 25px;
+}
+
+.footer_bottom{
+  width: 100%;
+ 
+  margin-bottom: 25px;
+}

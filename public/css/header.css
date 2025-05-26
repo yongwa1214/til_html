@@ -195,30 +195,28 @@ main {
   z-index: 999;
 }
 
-.m_header_menu{
+.m_header_menu {
   display: flex;
   align-items: center;
   gap: 15px;
 }
 
-.m_header_menu a{
+.m_header_menu a {
   font-size: 20px;
   font-weight: 400;
-
 }
 
-.m_header_search{
+.m_header_search {
   display: flex;
   align-items: center;
 }
 
 .m_header_search a {
-
 }
 
 /* 반응형 작업 */
 @media all and (max-width: 1024px) {
-  .main{
+  .main {
     padding-top: 40px;
   }
   .header {

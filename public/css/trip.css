@@ -4,18 +4,22 @@
 }
 .trip_top {
   display: block;
-  text-align: center;
   margin-bottom: 22px;
-
-
-
+  text-align: center;
 }
 
 .trip_top_title {
+  /* position: relative; */
   display: flex;
-  align-items: center; 
-  
+  align-items: center;
+  justify-content: center; /*가로 정렬*/
+ 
+
 }
+/* .trip .question{
+  transform: translateY(-10%);
+
+} */
 
 .trip_desc {
   font-size: 18px;
@@ -26,7 +30,7 @@
 .trip_list {
   position: relative;
   display: flex;
-  gap: 20px
+  gap: 20px;
 }
 .trip_item {
   position: relative;
@@ -73,7 +77,7 @@
 .trip_item_content {
 }
 .trip_content_title {
-  display: block; 
+  display: block;
   /* 말줄임 처리 */
   overflow: hidden;
   font-size: 16px;

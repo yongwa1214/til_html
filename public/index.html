@@ -16,8 +16,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/tour.css" />
-    <link rel="stylesheet" href="css/trip.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="css/trip.css" />
     <!-- js 초기 코드 -->
     <script src="js/index.js"></script>
     <script src="js/header.js"></script>
@@ -104,7 +103,19 @@
       </header>
 
       <!-- 모바일 상단 -->
-      <div class="m_header">모바일 헤더</div>
+      <div class="m_header">
+        <div class="m_header_menu">
+          <a href="">홈</a>
+          <a href="">투어</a>
+          <a href="">티켓</a>
+        </div>
+        <div class="m_header_search">
+          <a href="#">
+            <img src="images/btn_search.svg" alt="제품검색">
+          </a>
+        </div>
+      </div>
+
       <!-- 메인 -->
       <main class="main">
         <div class="layout">
@@ -115,8 +126,9 @@
               <div class="swiper-wrapper">
                 <!-- API 연동 -->
               </div>
-              <div class="swiper-pagination"></div>
             </div>
+            
+            <div class="swiper-pagination sw_banner_pg"></div>
 
             <button class="slide_bt banner_prev slide_bt_left">
               <img src="images/slider_arrow.svg" alt="left" title="left" />
@@ -146,6 +158,7 @@
                   <div class="swiper-wrapper">
                     <!-- API 연동 -->
                   </div>
+                  <div class="swiper-wrapper"></div>
                 </div>
 
                 <button class="slide_bt tour_prev slide_bt_left">
@@ -153,7 +166,11 @@
                 </button>
 
                 <button class="slide_bt tour_next slide_bt_right">
-                  <img src="images/slider_arrow.svg" alt="right" title="right"/>
+                  <img
+                    src="images/slider_arrow.svg"
+                    alt="right"
+                    title="right"
+                  />
                 </button>
               </div>
 
@@ -174,16 +191,19 @@
           <!-- Trip -->
           <div class="trip">
             <div class="trip_top">
-              <img
-                src="images/icon_w_trip_new_pc.svg"
-                alt="W트립"
-                title="W트립"
-              />  
-              <a href="#"><img
-                src="images/icon_w_trip_question_mark_pc.svg"
-                alt="도움"
-                title="도움"
-              /></a>
+              <div class="trip_top_title">
+                <img
+                  src="images/icon_w_trip_new_pc.svg"
+                  alt="W트립"
+                  title="W트립"
+                />
+                <a href="#"
+                  ><img
+                    src="images/icon_w_trip_question_mark_pc.svg"
+                    alt="도움"
+                    title="도움"
+                /></a>
+            </div>
               <p class="trip_desc">누구와 여행 가시나요? 동행자별 맞춤여행</p>
             </div>
 
@@ -314,9 +334,7 @@
               <button class="slide_bt trip_next slide_bt_right">
                 <img src="images/slider_arrow.svg" alt="right" title="right"/>
               </button>
-            -->
-
-            </div>
+            --></div>
 
             <div class="trip_bts">
               <a href="#"
@@ -335,63 +353,10 @@
           <div></div>
         </div>
       </main>
-            <!-- 하단 -->
-            <div>
-              <footer class="footer">
-                <div class="footer_top">
-                  <ul class="etc_menu">
-                    <li><a href="#">회사소개</a></li>
-                    <li><a href="#">이용약관</a></li>
-                    <li><a href="#">개인정보처리방침</a></li>
-                    <li><a href="#">위치기반서비스 이용약관</a></li>
-                    <li><a href="#">여행약관</a></li>
-                    <li><a href="#">여행자보험 가입내역</a></li>
-                    <li><a href="#">티켓판매안내</a></li>
-                    <li><a href="#">공지사항</a></li>
-                    <li><a href="#">고객센터</a></li>
-                    <li><a href="#">Language</a></li>
-                  </ul>
-                </div>
-                <div class="footer_middle">
-                  <div>
-                    <h3>(주)놀유니버스</h3>
-                    <p>주소 경기도 성남시 수정구 금토로 70(금토동, 텐엑스타워)</p>
-                    <p>사업자등록번호 824-81-02515 <a href="#">사업자정보확인</a> </p>
-                    통신판매업신고 2024-성남수정-0912 <br />
-                    관광사업증 등록번호 : 제2024-000024호 <br />
-                    <span>호스팅서비스제공자 (주)놀유니버스 | 대표이사 배보찬, 최휘영</span>
-                  </div>
-                  <div>
-                    <h3>고객센터</h3>
-                    <br />
-                    투어1588-3443 | 티켓1544-1555 <br />
-                    팩스02-830-8295 | 이메일help.interpark@nol-universe.com <br />
-                    해외항공 02-6479-4399 | 국내항공 02-3479-4340 <br />
-                    <a href="#">투어 1:1문의</a> | <a href="#">티켓 1:1문의</a>
-                  </div>
-                  <div>
-                    <h3>전자금융거래 분쟁처리 담당정보</h3>
-                    <br />투어 1588_3443 | 티켓1544_1555 <br />팩스02-830-825 |
-                    이메일interpark_ef@nol-universe.com
-                    <br />개인정보보호책임사privacy_i@nol-universe.com
-                  </div>
-                </div>
-                <div class="footer_bottom">
-                  (주)놀유니버스는 항공사가 제공하는 개별 항공권 및 여행사가 제공하는
-                  일부 여행상품에 대하여 통신판매중개자의 지위를 가지며, 해당상품,
-                  상품정보, 거래에 관한 의무와 책임은 판매자에게 있습니다.
-                  <br />
-                  항공권 또는 항공권이 포함된 경우, 표시되는 상품요금은 예상
-                  유류할증료와 제세공과금이 포함된 가격이며, 발권일/환율 등에 따라
-                  변동될 수 있습니다. <br />
-                  (주)놀유니버스는 인터파크티켓, 인터파크투어의 통신판매중개자로서
-                  통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓 상품에
-                  대하여 (주)놀유니버는 일체 책임을 지지 않습니다. 
-                  <div>ⓒ Nol Universe Co., Ltd. All rights reserved.</div>
-                </div>
-              </footer>
-            </div>
-          </div>
-        </body>
-      </html>
-      
+      <!-- 하단 -->
+      <footer>
+        <div></div>
+      </footer>
+    </div>
+  </body>
+</html>

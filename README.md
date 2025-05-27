@@ -199,3 +199,88 @@ margin-top 의 오류라고 해서 유명합니다. (웹브라우저 문제)
 
 - header 영역 css 작업
 - header 와 반응형 header 를 분리해서 만들면 편하다
+
+## 5. 자연스러운 반응형 계산법
+
+- 예제)
+  - PC 디자인 영역 너비가 1280px 이다
+  - 특정 영역의 너비가 650px, 높이가 400px 이다
+  - 자연스러운 너비, 높이를 적용한다면?
+
+  - 정리
+    - max -width: 650px, max- height: 400px
+    - `영역너비(650px) / 디자인 전체 영역 너비 (1280px) * 100 = 결과 vw`
+    - `영역높이(400px) / 디자인 전체 영역 너비 (1280px) * 100 = 결과 vw`
+
+```html
+<div class="box_wrap">
+          <div class="box">내용</div>
+        <!-- 자연스러운 반응형 계산법 -->  
+        </div>
+```
+
+```css
+    .box_wrap {
+  position: relative;
+  max-width: 1280px;
+  width: 100%; 
+  /*너비를 퍼센트로 주면 화면이 늘어남에 따라서 같이 늘어남*/
+  /*px로 하면 화면이 늘어남에 따라서 같이 늘어나지 않음 */
+  /* media 쿼리를 주지 않고 반응형을 만듦 ↑ */
+
+  background-color: hotpink;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.box{
+  position: relative;
+  max-width: 650px;
+  width: 50.78vw;
+  max-height: 400px;
+  height: 31.25vw; /*너비를 기준으로 잡았기 때문에 vh가 아닌 vw이다 */
+  background-color: yellowgreen;
+}
+
+```
+
+## 6. 안내창 만들기
+
+```html
+ <!-- 안내창 -->
+    <div class="popup">
+        <div class="popup_content">내용</div>
+  <!-- 안내창-->  
+```
+
+```css
+.popup {
+  position: fixed; /*absolute말고 그냥 fixed쓰세요*/
+ left: 0;
+ top: 0;
+ width: 100%;
+ height:100%;
+ /* 아래처럼 해도 됩니다. */
+ height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99999999;
+}
+
+.popup_content{
+  position: relative;
+  max-width: 650px;
+  width: 50.78vw;
+  max-height: 400px;
+  height: 31.25vw; /*너비를 기준으로 잡았기 때문에 vh가 아닌 vw이다 */
+  background-color: yellowgreen;
+  margin: 0 auto;
+
+```
+
+# SCSS 셋팅 
+
+- VSCode에서 설치 `Live Sass Compiler`
+- 실습
+  - css 폴더 /`test.scss 파일` 생성
+  - VSCode 하단에 `Watch Sass` 를 클릭, Watching으로 바꿔줌
+  

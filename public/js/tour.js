@@ -23,7 +23,7 @@ window.addEventListener("load", function () {
   }
   // 데이터를 처리하는 함수
   const parseData = function (_data) {
-    console.log(_data);
+   
     // 1. 카테고리 글자만 추출하기
     //const cateArr = _data.map(item => item.cate);  //return 생략가능
     const cateArr = _data.map(function (item) {
@@ -109,9 +109,7 @@ window.addEventListener("load", function () {
 
   // 목록 html을 만든다.
   function makeTourListHtml() {
-    console.log("어느 목록을 출력할 것인가: " + cateListArr[cateFocusIndex]);
     // 1. html 태그 만들기
-    // 1. html 태그만들기
     // 1.1. 어디다가 만들지? querySelector 찾아줌.
     const swTourWrap = document.querySelector(".sw_tour .swiper-wrapper");
     // 1.2. html 로 만들기

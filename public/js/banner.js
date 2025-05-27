@@ -19,7 +19,6 @@ window.addEventListener("load", function () {
 
   // 데이터 만들기 함수
   const makeHtml = function (_data) {
-    console.log(_data);
     // 2.  데이터를 해석해서 html 생성
     const swBannerWrap = this.document.querySelector(
       ".sw_banner .swiper-wrapper"
@@ -82,6 +81,7 @@ window.addEventListener("load", function () {
           spaceBetween: 25,},
       }
     });
+    
 
 
     const swBanner = this.document.querySelector(".sw_banner");

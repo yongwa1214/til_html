@@ -23,11 +23,17 @@ window.addEventListener("load", function () {
   const makeHtml = (_data) => {
     console.log(_data);
 
-    const listArr = this.document.querySelector(
+    const swTripWrap = this.document.querySelector(
       ".trip_list .Trip_item"
     );
 
     // 완성시킬 html 글자
+    let html = "";
+    for(let i =0; i <_data.length; i++){
+      const tag = `
+      
+      `
+    }
   };
 
   //주소 호출

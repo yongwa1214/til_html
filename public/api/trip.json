@@ -1,40 +1,39 @@
 [
-  {
-    "list": [
+  
       {
         "link":"#",
-        "image": "https://media.interparkcdn.net/interpark-tour/f_auto/w_450,h_380,q_auto,c_auto/tourimage/product/tour/00161/A30/500/A3018639_1_300.jpg",
-        "title": "[먀먀]서유럽4국10일,에펠탑/세느강유람선/베네치아수상택시/로마벤츠투어 ALL포함",
-        "who" : "친구",
-        "tag" :"8박 10일·인천 출발·대한공항·쇼핑 3회",
+        "image": "https://tourimage.interpark.com/product/tour/00161/A30/1000/A3018561_8_450.jpg",
+        "title": "*평점9.7 최다후기*[출발확정/W트립]스페인/포르투갈 9일,아시아나항공,3박 5성급 숙박",
+        "who" : "친구연인",
+        "tag" : "7박 9일·인천 출발·아시아나항공·쇼핑4회" ,
         "price": "4,899,000"
       
       },
       {
         "link":"#",
-        "image": "https://media.interparkcdn.net/interpark-tour/f_auto/w_450,h_380,q_auto,c_auto/tourimage/product/tour/00161/A30/500/A3018639_1_300.jpg",
-        "title": "[W트립/노옵션]서유럽4국10일,에펠탑/세느강유람선/베네치아수상택시/로마벤츠투어 ALL포함",
-        "who" : "친구",
-        "tag" :"8박 10일·인천 출발·대한공항·쇼핑 3회",
-        "price": "4,899,000"
+        "image": "https://media.interparkcdn.net/interpark-tour/f_auto/w_450,h_380,q_auto,c_auto/tourimage/product/tour/00161/B40/500/B4010646_6_423.JPG",
+        "title": "[베스트셀러/W트립]괌 오전출발 4/5일, PIC 전일정식사포함+자유일정",
+        "who" : "아이",
+        "tag" : "3박 5일·인천 출발·제주항공·노쇼핑",
+        "price": "1,054,000"
       
       },
       {
         "link":"#",
-        "image": "https://media.interparkcdn.net/interpark-tour/f_auto/w_450,h_380,q_auto,c_auto/tourimage/product/tour/00161/A30/500/A3018639_1_300.jpg",
-        "title": "[W트립/노옵션]서유럽4국10일,에펠탑/세느강유람선/베네치아수상택시/로마벤츠투어 ALL포함",
-        "who" : "친구",
-        "tag" :"8박 10일·인천 출발·대한공항·쇼핑 3회",
-        "price": "4,899,000"
+        "image": "./api/trip/싱가포르.jpg",
+        "title": "[베스트셀러/W트립] 싱가포르 5일, 마리나베이샌즈 1박, 노쇼핑, 4인이상 출발보장",
+        "who" : "가족",
+        "tag" :"3박 5일·인천 출발·제주항공·노쇼핑",
+        "price": "1,379,000"
       
       },
       {
         "link":"#",
-        "image": "https://media.interparkcdn.net/interpark-tour/f_auto/w_450,h_380,q_auto,c_auto/tourimage/product/tour/00161/A30/500/A3018639_1_300.jpg",
-        "title": "[W트립/노옵션]서유럽4국10일,에펠탑/세느강유람선/베네치아수상택시/로마벤츠투어 ALL포함",
-        "who" : "친구",
-        "tag" :"8박 10일·인천 출발·대한공항·쇼핑 3회",
-        "price": "4,899,000"
+        "image": "https://tourimage.interpark.com/product/tour/00161/A10/1000/A1034600_7_160.jpg",
+        "title": "[베스트셀러/W트립] 코타키나발루 5일, 수트라하버 노쇼핑 호핑+반딧불+17시체크아웃",
+        "who" : "아이",
+        "tag" :"3박 5일·인천 출발·제주항공·노쇼핑",
+        "price": "674,000"
       
       },
       {
@@ -75,6 +74,6 @@
       }
 
       
-    ]
-  }
+    
+  
 ]

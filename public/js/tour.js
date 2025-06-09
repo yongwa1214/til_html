@@ -123,7 +123,7 @@ window.addEventListener("load", function () {
             <div class="item_image">
               <img
                 src="${item.image}"
-                alt="${item.title}"
+                alt="${item.city}"
                 title="${item.title}"
               />
             </div>

@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/tour.css" />
     <link rel="stylesheet" href="css/trip.css" />
+    <link rel="stylesheet" href="css/ticket.css">
     <!-- js 초기 코드 -->
     <script src="js/index.js"></script>
     <script src="js/header.js"></script>
@@ -197,7 +198,7 @@
           </div>
 
           <!-- Trip -->
-          <div class="trip">
+          <div class="main_top">
             <div class="trip_top">
               <div class="trip_top_title">
                 <img
@@ -218,124 +219,13 @@
 
             <!-- JSON 연동  -->
             <div class="trip_list">
-              <div class="trip_item">
-                <a href="#">
-                  <div class="trip_item_image">
-                    <img
-                      src="images/Europe.avif"
-                      alt="홍콩/마카오/원분수쇼/파리지앵"
-                      title="[W트립]홍콩/마카오 3일, 노쇼핑,노옵션, 윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리"
-                    />
-                  </div>
-                  <div class="trip_item_name">
-                    <img
-                      src="images/icon_w_logo_new.svg"
-                      alt="w icon"
-                      title="w icon"
-                    />
-                    친구연인
-                  </div>
-                  <div class="trip_item_content">
-                    <p class="trip_content_title">
-                      [W트립]홍콩/마카오 3일, 노쇼핑,노옵션,
-                      윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리
-                    </p>
-                    <span class="trip_content_tag"
-                      >8박 10일·인천 출발·대한항공·쇼핑 3회</span
-                    >
-                    <span class="trip_content_price"><b>4,899,000원~</b></span>
-                  </div>
-                </a>
+              <!-- Swiper -->
+              <div class="swiper sw_trip">
+                <div class="swiper-wrapper">
+                  <!-- API 연동 -->
+                </div>
               </div>
-              <div class="trip_item">
-                <a href="#">
-                  <div class="trip_item_image">
-                    <img
-                      src="images/Europe.avif"
-                      alt="홍콩/마카오/원분수쇼/파리지앵"
-                      title="[W트립]홍콩/마카오 3일, 노쇼핑,노옵션, 윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리"
-                    />
-                  </div>
-                  <div class="trip_item_name">
-                    <img
-                      src="images/icon_w_logo_new.svg"
-                      alt="w icon"
-                      title="w icon"
-                    />
-                    친구연인
-                  </div>
-                  <div class="trip_item_content">
-                    <p class="trip_content_title">
-                      [W트립]홍콩/마카오 3일, 노쇼핑,노옵션,
-                      윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리
-                    </p>
-                    <span class="trip_content_tag"
-                      >8박 10일·인천 출발·대한항공·쇼핑 3회</span
-                    >
-                    <span class="trip_content_price"><b>4,899,000원~</b></span>
-                  </div>
-                </a>
-              </div>
-              <div class="trip_item">
-                <a href="#">
-                  <div class="trip_item_image">
-                    <img
-                      src="images/Europe.avif"
-                      alt="홍콩/마카오/원분수쇼/파리지앵"
-                      title="[W트립]홍콩/마카오 3일, 노쇼핑,노옵션, 윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리"
-                    />
-                  </div>
-                  <div class="trip_item_name">
-                    <img
-                      src="images/icon_w_logo_new.svg"
-                      alt="w icon"
-                      title="w icon"
-                    />
-                    친구연인
-                  </div>
-                  <div class="trip_item_content">
-                    <p class="trip_content_title">
-                      [W트립]홍콩/마카오 3일, 노쇼핑,노옵션,
-                      윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리
-                    </p>
-                    <span class="trip_content_tag"
-                      >8박 10일·인천 출발·대한항공·쇼핑 3회</span
-                    >
-                    <span class="trip_content_price"><b>4,899,000원~</b></span>
-                  </div>
-                </a>
-              </div>
-              <div class="trip_item">
-                <a href="#">
-                  <div class="trip_item_image">
-                    <img
-                      src="images/Europe.avif"
-                      alt="홍콩/마카오/원분수쇼/파리지앵"
-                      title="[W트립]홍콩/마카오 3일, 노쇼핑,노옵션, 윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리"
-                    />
-                  </div>
-                  <div class="trip_item_name">
-                    <img
-                      src="images/icon_w_logo_new.svg"
-                      alt="w icon"
-                      title="w icon"
-                    />
-                    친구연인
-                  </div>
-                  <div class="trip_item_content">
-                    <p class="trip_content_title">
-                      [W트립]홍콩/마카오 3일, 노쇼핑,노옵션,
-                      윈분수쇼/파리지앵+런더너야경/리펄스베이/스탠리
-                    </p>
-                    <span class="trip_content_tag"
-                      >8박 10일·인천 출발·대한항공·쇼핑 3회</span
-                    >
-                    <span class="trip_content_price"><b>4,899,000원~</b></span>
-                  </div>
-                </a>
-              </div>
-
-              <!-- 버튼 
+              <!-- 버튼 -->
               <button class="slide_bt trip_prev slide_bt_left">
                 <img src="images/slider_arrow.svg" alt="left" title="left" />
               </button>
@@ -343,9 +233,9 @@
               <button class="slide_bt trip_next slide_bt_right">
                 <img src="images/slider_arrow.svg" alt="right" title="right"/>
               </button>
-            --></div>
+            </div>
 
-            <div class="trip_bts">
+            <div class="section_bts">
               <a href="#"
                 >W트립 상품 더보기
                 <img
@@ -357,7 +247,92 @@
             </div>
           </div>
           <!-- Ticket -->
-          <div></div>
+          <div class="ticket">
+            <div class="main_top">
+              <h2 class="section_title"> 티켓 랭킹</h2>
+              <span class="section_desc">오늘 뭐볼까? 지금 HOT한 공연</span>
+            </div>
+            <div class="tk_middle">
+              <div class="tk_section_category">
+                <ul class="tk_section_category_bts">
+                  <li><button class="tk_cate_focus">뮤지컬</button></li>
+                  <li><button>콘서트</button></li>
+                  <li><button>스포츠</button></li>
+                  <li><button>전시/행사</button></li>
+                  <li><button>클래식/무용</button></li>
+                  <li><button>아동/가족</button></li>
+                  <li><button>연극</button></li>
+                  <li><button>레저/캠핑</button></li>
+                </ul>
+              </div>
+
+              <!-- API 연동 -->
+              <div class="ticket_list">
+                <div class="ticket_item">
+                  <div class="ticket_img">
+                    <div class="back_color"></div>
+                    <div class="ticket_back_img">
+                      <img src="./images/P0004249_p.gif" alt="팬텀">
+                    </div>
+                    <div class="ticket_rank">1</div>
+                  </div>
+                  <div class="ticket_desc">
+                    <h2>뮤지컬 <팬텀> 10주년 기념 공연</h2>
+                    <span>세종문화회관 대극장</span>
+                    <span>2025.05.31 - 2025.08.11</span>
+                  </div>
+                </div>
+                <div class="ticket_item">
+                  <div class="ticket_img">
+                    <div class="back_color"></div>
+                    <div class="ticket_back_img">
+                      <img src="./images/P0004249_p.gif" alt="팬텀">
+                    </div>
+                    <div class="ticket_rank">1</div>
+                  </div>
+                  <div class="ticket_desc">
+                    <h2>뮤지컬 <팬텀> 10주년 기념 공연</h2>
+                    <span>세종문화회관 대극장</span>
+                    <span>2025.05.31 - 2025.08.11</span>
+                  </div>
+                </div>
+                <div class="ticket_item">
+                  <div class="ticket_img">
+                    <div class="back_color"></div>
+                    <div class="ticket_back_img">
+                      <img src="./images/P0004249_p.gif" alt="팬텀">
+                    </div>
+                    <div class="ticket_rank">1</div>
+                  </div>
+                  <div class="ticket_desc">
+                    <h2>뮤지컬 <팬텀> 10주년 기념 공연</h2>
+                    <span>세종문화회관 대극장</span>
+                    <span>2025.05.31 - 2025.08.11</span>
+                  </div>
+                </div>
+                <div class="ticket_item">
+                  <div class="ticket_img">
+                    <div class="back_color"></div>
+                    <div class="ticket_back_img">
+                      <img src="./images/P0004249_p.gif" alt="팬텀">
+                    </div>
+                    <div class="ticket_rank">1</div>
+                  </div>
+                  <div class="ticket_desc">
+                    <h2>뮤지컬 <팬텀> 10주년 기념 공연</h2>
+                    <span>세종문화회관 대극장</span>
+                    <span>2025.05.31 - 2025.08.11</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="section_bts">
+              <a href="#">
+                티켓 홈 바로가기
+                <img src="./images/icon_linkArrow.svg" alt="">
+              </a>
+            </div>
+          </div>
           <!-- Live -->
           <div></div>
         </div>

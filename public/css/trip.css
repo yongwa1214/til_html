@@ -1,7 +1,4 @@
-.trip {
-  position: relative;
-  margin-top: 65px;
-}
+
 .trip_top {
   display: block;
   margin-bottom: 22px;
@@ -24,7 +21,7 @@
 .trip_desc {
   font-size: 18px;
   font-weight: 300;
-  color: rgba(0, 0, 7%, 0.75);
+  color: rgba(0, 0, 7, 0.75);
   margin-top: 10px;
 }
 .trip_list {

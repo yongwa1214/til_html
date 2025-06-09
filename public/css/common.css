@@ -37,7 +37,9 @@ body {
   color: #000000;
   word-spacing: 0px;
 }
-
+span {
+  display: block;
+}
 .wrap {
   width: 100%;
 }
@@ -50,6 +52,13 @@ body {
     margin-bottom: 0;
     margin-left: auto;
     margin-right: auto;*/
+}
+
+/* trip, ticket, live 상단 간격 */
+.main_top {
+  position: relative;
+  margin-top: 80px;
+  padding-bottom: 22px;
 }
 /* 반응형 작업 */
 @media all and (max-width: 1280px) {

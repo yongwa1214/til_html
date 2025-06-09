@@ -1,0 +1,77 @@
+.tk_section_category {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 24px;
+}
+.tk_section_category_bts {
+  display: flex;
+  gap: 6px;
+}
+.tk_section_category_bts > li > button {
+  padding: 12px 20px;
+
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 52px;
+
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.tk_section_category_bts > li > button.tk_cate_focus {
+  font-weight: 700;
+  color: #fff;
+  background-color: #333333;
+  border: 1px solid #333333;
+}
+
+
+.ticket_list {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.ticket_img {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.back_color {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
+  background-image: linear-gradient(#00000013, rgba(0, 0, 0, 0.04)),
+    linear-gradient(180deg, transparent 68.5%, rgba(0, 0, 0, 0.6));
+}
+.ticket_back_img > img {
+  height: 100%;
+}
+.ticket_rank {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  z-index: 2;
+  font-size: 5.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+.ticket_desc {
+  display: block;
+  align-content: space-between;
+  padding: 10px 5px 0 5px;
+}
+.ticket_desc span:first-of-type {
+  margin: 5px 0;
+}
+.ticket_desc > span {
+  font-size: 14px;
+  color: #666;
+}

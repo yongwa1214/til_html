@@ -67,7 +67,7 @@ window.addEventListener("load", function () {
       html = html + tag;
     }
 
-    console.log(html);
+    
     // html 태그 넣기
     swTripWrap.innerHTML = html;
 
